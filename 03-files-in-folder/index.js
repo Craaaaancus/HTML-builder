@@ -17,7 +17,7 @@ fs.readdir(pathToFolder, {withFileTypes: true}, (err, files) => {
           else {
             let size = stats.size;
             size /= 1024;
-            console.log(base + " - " + ext + " - " + size.toFixed(3) + "kb");
+            console.log(base + " - " + ext.slice(1) + " - " + size.toFixed(3) + "kb");
           }
         });
       }
